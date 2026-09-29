@@ -1,0 +1,19 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Mar  4 01:30:59 2026
+
+@author: awais
+"""
+
+# lists of different sizes
+
+names = ["Ali", "Sara", "Ahmed"]
+roll_nos = [101, 102, 103]
+marks = [85, 92, 78]
+
+names = ["Ali", "Sara"]
+rolls = [101, 102, 103]
+
+# zip will only produce TWO pairs. 
+# Roll 103 is simply ignored.
