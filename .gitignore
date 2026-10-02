@@ -1,0 +1,34 @@
+# Ignore everything by default
+*
+
+# Allow folders recursively
+!*/
+
+# Allow code and docs recursively
+!**/*.c
+!**/*.h
+!**/*.hpp
+!**/*.cpp
+!**/*.py
+!**/*.txt
+!**/*.pdf
+!**/*.md
+!**/*.gitignore
+!**/*.jpeg
+!**/*.png
+!**/*.PNG
+!**/*.csv
+
+# Ignore compiled binaries
+*.out
+*.exe
+*.o
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore system files
+*.DS_Store
+
+# Ignore Windows Zone.Identifier streams
+*:*Zone.Identifier
