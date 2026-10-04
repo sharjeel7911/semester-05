@@ -18,6 +18,11 @@
 !**/*.png
 !**/*.PNG
 !**/*.csv
+!**/*.toml
+!**/*.uv.lock
+!**/*.xlsx
+!**/*.tif
+!**/*.zip
 
 # Ignore compiled binaries
 *.out
