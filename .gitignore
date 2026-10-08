@@ -23,6 +23,7 @@
 !**/*.xlsx
 !**/*.tif
 !**/*.zip
+!**/*uv.lock
 
 # Ignore compiled binaries
 *.out

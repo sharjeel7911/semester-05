@@ -1,0 +1,260 @@
+﻿Sno,Roll No,Name,Gender,Credit Hrs,CGPA,U,Status,Email,Action
+1,L1F25BSCS0001,Muhammad  Tabish,Male,15,1.98,enroll,First Probation,L1F25BSCS0001@ucp.edu.pk,
+2,L1F25BSCS0002,Muhammad Abdullah Mazhar,Male,15,1.45,enroll,First Probation,L1F25BSCS0002@ucp.edu.pk,"ITC (T) Repeat, B- Required"
+3,L1F25BSCS0034,Rai Saqlain  Haider Khan,Male,15,1.49,enroll,First Probation,L1F25BSCS0034@ucp.edu.pk,
+4,L1F25BSCS0036,Ayan Sikandar,Male,15,0.72999999999999998,enroll,First Probation,L1F25BSCS0036@ucp.edu.pk,
+5,L1F25BSCS0046,Muhammad Kazim,Male,15,1.5800000000000001,enroll,First Probation,L1F25BSCS0046@ucp.edu.pk,"ITC (T+L) Repeat, C+ Required"
+6,L1F25BSCS0047,Aleena Mehmood,Female,15,1.9299999999999999,enroll,First Probation,L1F25BSCS0047@ucp.edu.pk,
+7,L1F25BSCS0048,Saif Ur Rehman,Male,15,1.4399999999999999,enroll,First Probation,L1F25BSCS0048@ucp.edu.pk,"Discrete Repeat, B- Required"
+8,L1F25BSCS0060,Haris Imran  Mirza,Male,15,0.20000000000000001,enroll,First Probation,L1F25BSCS0060@ucp.edu.pk,
+9,L1F25BSCS0062,Zain Muneer,Male,15,1.98,enroll,First Probation,L1F25BSCS0062@ucp.edu.pk,
+10,L1F25BSCS0065,Muhammad Anas Haider  Haider ,Male,15,1.71,enroll,First Probation,L1F25BSCS0065@ucp.edu.pk,"ITC (T). PreCal Repeat, B- required"
+11,L1F25BSCS0073,Abdul Ahad,Male,15,1.8200000000000001,enroll,First Probation,L1F25BSCS0073@ucp.edu.pk,"All New Courses, Min B-"
+12,L1F25BSCS0080,Hafiz Muhammad Bin Sajjad,Male,15,1.53,enroll,First Probation,L1F25BSCS0080@ucp.edu.pk,"All New Courses, Min B-"
+13,L1F25BSCS0103,Sabeeha Fatima Sabeeha,Female,15,1.9299999999999999,enroll,First Probation,L1F25BSCS0103@ucp.edu.pk,"All New, B- required"
+14,L1F25BSCS0109,Abdul Rafey,Male,15,1.8,enroll,First Probation,L1F25BSCS0109@ucp.edu.pk,"All New Courses, Min B-"
+15,L1F25BSCS0114,Abdullah Zulfiqar,Male,15,1.8899999999999999,enroll,First Probation,L1F25BSCS0114@ucp.edu.pk,"All New Courses, Min B-"
+16,L1F25BSCS0119,Syed Aoun  Muhammad Gillani ,Male,15,1.49,enroll,First Probation,L1F25BSCS0119@ucp.edu.pk,"ITC (T) Repeat, B- Grade in all courses"
+17,L1F25BSCS0136,Sharjeel Amaan,Male,15,1.78,enroll,First Probation,L1F25BSCS0136@ucp.edu.pk,"BE(T) Repeat, C+ Required"
+18,L1F25BSCS0137,Mavra  Fareed ,Female,15,1.73,enroll,First Probation,L1F25BSCS0137@ucp.edu.pk,"BE(T) Repeat, B- Required"
+19,L1F25BSCS0158,Muhammad Adnan,Male,15,1.0700000000000001,enroll,First Probation,L1F25BSCS0158@ucp.edu.pk,Discontinuation requested
+20,L1F25BSCS0160,Saad  Khurram ,Male,15,1.6899999999999999,enroll,First Probation,L1F25BSCS0160@ucp.edu.pk,
+21,L1F25BSCS0161,Muneeb  Bashir,Male,15,0.59999999999999998,enroll,First Probation,L1F25BSCS0161@ucp.edu.pk,
+22,L1F25BSCS0163,Muhammad  Anss,Male,15,1.6000000000000001,enroll,First Probation,L1F25BSCS0163@ucp.edu.pk,"ITC (T+L) Repeat, B- Required"
+23,L1F25BSCS0165,Muhammad Faizan  Javed,Male,15,0.33000000000000002,enroll,First Probation,L1F25BSCS0165@ucp.edu.pk,
+24,L1F25BSCS0166,Masab Javed,Male,15,1.51,enroll,First Probation,L1F25BSCS0166@ucp.edu.pk,
+25,L1F25BSCS0169,Muhammad Abdullah,Male,15,1.98,enroll,First Probation,L1F25BSCS0169@ucp.edu.pk,
+26,L1F25BSCS0175,Dawood Abid,Male,15,1.22,enroll,First Probation,L1F25BSCS0175@ucp.edu.pk,
+27,L1F25BSCS0180,Abdul Hadi,Male,15,1.8,enroll,First Probation,L1F25BSCS0180@ucp.edu.pk,
+28,L1F25BSCS0184,Rehan  Sajjad ,Male,15,1.6000000000000001,enroll,First Probation,L1F25BSCS0184@ucp.edu.pk,"All New, B required"
+29,L1F25BSCS0196,Hussain Ali,Male,15,1.0900000000000001,enroll,First Probation,L1F25BSCS0196@ucp.edu.pk,
+30,L1F25BSCS0200,Ibrahim  Khan,Male,15,1.6200000000000001,enroll,First Probation,L1F25BSCS0200@ucp.edu.pk,"BE + ITC Repeat, B- grade required"
+31,L1F25BSCS0205,Emaan Khurram,Female,15,1.6399999999999999,enroll,First Probation,L1F25BSCS0205@ucp.edu.pk,"ITC Repeat, B- Grade in all courses"
+32,L1F25BSCS0207,Ahmed Nadeem,Male,15,1.9299999999999999,enroll,First Probation,L1F25BSCS0207@ucp.edu.pk,"All New Courses, Min B-"
+33,L1F25BSCS0208,Mahnoor Fatima  Islam,Female,15,1.8899999999999999,enroll,First Probation,L1F25BSCS0208@ucp.edu.pk,"All New Courses, Min B- Required"
+34,L1F25BSCS0222,Abdul Nafay Ghani,Male,15,1.5800000000000001,enroll,First Probation,L1F25BSCS0222@ucp.edu.pk,
+35,L1F25BSCS0224,Sameer Sarwar,Male,15,1.8899999999999999,enroll,First Probation,L1F25BSCS0224@ucp.edu.pk,"All New Courses, Min B-"
+36,L1F25BSCS0248,Muhammad  Abuzar ,Male,15,1.8899999999999999,enroll,First Probation,L1F25BSCS0248@ucp.edu.pk,"BE(T) Repeat, C+ Required"
+37,L1F25BSCS0254,Abdul Rehman,Male,15,1.6399999999999999,enroll,First Probation,L1F25BSCS0254@ucp.edu.pk,
+38,L1F25BSCS0260,Maryam  Khalil,Female,15,1.5800000000000001,enroll,First Probation,L1F25BSCS0260@ucp.edu.pk,"Discrete Repeat, B- Required, Mother visited"
+39,L1F25BSCS0277,Ahmad Hussain,Male,15,1.22,enroll,First Probation,L1F25BSCS0277@ucp.edu.pk,"ITC Repeat, B Grade in all courses"
+40,L1F25BSCS0285,Rida  Habib,Female,15,1.8200000000000001,enroll,First Probation,L1F25BSCS0285@ucp.edu.pk,"All New Courses, Min B-"
+41,L1F25BSCS0298,Muhammad Qamar Aziz,Male,15,1.29,enroll,First Probation,L1F25BSCS0298@ucp.edu.pk,"BE(T) Repeat, B Required"
+42,L1F25BSCS0302,Muhammad Faiq  Masood ,Male,15,1.6699999999999999,enroll,First Probation,L1F25BSCS0302@ucp.edu.pk,
+43,L1F25BSCS0303,Ammar Rizwan,Male,15,1.55,enroll,First Probation,L1F25BSCS0303@ucp.edu.pk,"BE + ITC Repeat, B- grade required"
+44,L1F25BSCS0304,Rehan Munawar,Male,15,1.6200000000000001,enroll,First Probation,L1F25BSCS0304@ucp.edu.pk,"ITC (T) Repeat, B- Grade in all courses"
+45,L1F25BSCS0308,Umair Maqsood,Male,15,1.3799999999999999,enroll,First Probation,L1F25BSCS0308@ucp.edu.pk,
+46,L1F25BSCS0312,Muhammad Saad  Asim,Male,15,1.78,enroll,First Probation,L1F25BSCS0312@ucp.edu.pk,"All New Courses, Min B-"
+47,L1F25BSCS0321,Huzaifa  Ali ,Male,9,1.5900000000000001,enroll,First Probation,L1F25BSCS0321@ucp.edu.pk,
+48,L1F25BSCS0323,Huzaifa Sajid,Male,15,1.9099999999999999,enroll,First Probation,L1F25BSCS0323@ucp.edu.pk,"All New Courses, Min B-"
+49,L1F25BSCS0325,Muhammad Basim,Male,15,1.6699999999999999,enroll,First Probation,L1F25BSCS0325@ucp.edu.pk,"ITC (L+T) Repeat, No DLD, C+ Required"
+50,L1F25BSCS0334,Ahmad Arfeen,Male,15,1.27,enroll,First Probation,L1F25BSCS0334@ucp.edu.pk,
+51,L1F25BSCS0337,Sawera Mehboob,Female,15,1.8200000000000001,enroll,First Probation,L1F25BSCS0337@ucp.edu.pk,"All New Courses, Min B-"
+52,L1F25BSCS0338,Maham Rizwan,Female,15,1.8700000000000001,enroll,First Probation,L1F25BSCS0338@ucp.edu.pk,"All New + Elem Algebra, B- required, Email"
+53,L1F25BSCS0341,Ahmad Raza Khalid,Male,15,1.76,enroll,First Probation,L1F25BSCS0341@ucp.edu.pk,"All New Courses, Min B-"
+54,L1F25BSCS0343,Hamza Sajjad  Muhammad Sajjad ,Male,15,1.95,enroll,First Probation,L1F25BSCS0343@ucp.edu.pk,
+55,L1F25BSCS0345,Muhammad Faiq Khursheed,Male,15,1.96,enroll,First Probation,L1F25BSCS0345@ucp.edu.pk,
+56,L1F25BSCS0346,Ryan Azhar,Male,15,1.74,enroll,First Probation,L1F25BSCS0346@ucp.edu.pk,"All New Courses, Min B-"
+57,L1F25BSCS0356,Farhan Ahmed Siddiqui,Male,15,1.8899999999999999,enroll,First Probation,L1F25BSCS0356@ucp.edu.pk,"All New, B- required"
+58,L1F25BSCS0373,Hamza Saleem,Male,15,1.9299999999999999,enroll,First Probation,L1F25BSCS0373@ucp.edu.pk,
+59,L1F25BSCS0391,Muhammad  Kashif ,Male,15,1.51,enroll,First Probation,L1F25BSCS0391@ucp.edu.pk,
+60,L1F25BSCS0393,Hafsa Shabeer,Female,15,1.6899999999999999,enroll,First Probation,L1F25BSCS0393@ucp.edu.pk,
+61,L1F25BSCS0405,Muhammad Umer Bhatti,Male,15,1.96,enroll,First Probation,L1F25BSCS0405@ucp.edu.pk,"All New + Element Algebra, B- required"
+62,L1F25BSCS0406,Aimen Adil,Female,15,1.76,enroll,First Probation,L1F25BSCS0406@ucp.edu.pk,"ITC Repeat, B- Grade in all courses"
+63,L1F25BSCS0409,Minal Chaudhry,Female,15,1.98,enroll,First Probation,L1F25BSCS0409@ucp.edu.pk,"All New, B- required"
+64,L1F25BSCS0414,Mughees But,Male,15,1.6000000000000001,enroll,First Probation,L1F25BSCS0414@ucp.edu.pk,"All New Courses, Min B"
+65,L1F25BSCS0420,Mubeen Ul Haq,Male,15,1.6200000000000001,enroll,First Probation,L1F25BSCS0420@ucp.edu.pk,
+66,L1F25BSCS0422,Muhammad  Usaid,Male,13,0.92000000000000004,enroll,First Probation,L1F25BSCS0422@ucp.edu.pk,
+67,L1F25BSCS0434,Muhammad Asfand Yar,Male,15,1.76,enroll,First Probation,L1F25BSCS0434@ucp.edu.pk,
+68,L1F25BSCS0446,Hissan Ali Riaz,Male,15,1.6699999999999999,enroll,First Probation,L1F25BSCS0446@ucp.edu.pk,
+69,L1F25BSCS0453,Hasnat  Saleem,Male,15,1.76,enroll,First Probation,L1F25BSCS0453@ucp.edu.pk,
+70,L1F25BSCS0454,Zona  Kashif,Female,15,1.6499999999999999,enroll,First Probation,L1F25BSCS0454@ucp.edu.pk,
+71,L1F25BSCS0455,Urwah  Ammad,Female,15,1.2,enroll,First Probation,L1F25BSCS0455@ucp.edu.pk,Repeat with New Admission
+72,L1F25BSCS0464,Abdullah Manzoor,Male,15,1.8,enroll,First Probation,L1F25BSCS0464@ucp.edu.pk,"ITC(T+L) Repeat, C+ grade required"
+73,L1F25BSCS0465,Ali Hassan Khan,Male,15,1.73,enroll,First Probation,L1F25BSCS0465@ucp.edu.pk,"All New Courses, Min B-, Mohsin Abbas"
+74,L1F25BSCS0472,Mohid  Asif,Male,15,1.78,enroll,First Probation,L1F25BSCS0472@ucp.edu.pk,"All New Courses, Min B-"
+75,L1F25BSCS0480,Meezab Amir,Male,15,1.9299999999999999,enroll,First Probation,L1F25BSCS0480@ucp.edu.pk,All New Courses. Min B-
+76,L1F25BSCS0489,Tehreem Nasir,Female,15,1.98,enroll,First Probation,L1F25BSCS0489@ucp.edu.pk,All New Courses. Min B-
+77,L1F25BSCS0507,Javeria Asif,Female,15,1.95,enroll,First Probation,L1F25BSCS0507@ucp.edu.pk,"ITC + Eng 1 repeat, C+ required"
+78,L1F25BSCS0518,Areej  Ashraf ,Female,15,1.8200000000000001,enroll,First Probation,L1F25BSCS0518@ucp.edu.pk,All New Courses. Min B-
+79,L1F25BSCS0523,Aqsa Masood,Female,15,0.20000000000000001,enroll,First Probation,L1F25BSCS0523@ucp.edu.pk,
+80,L1F25BSCS0529,Ali  Murtaza,Male,15,1.3300000000000001,enroll,First Probation,L1F25BSCS0529@ucp.edu.pk,
+81,L1F25BSCS0531,Muhammad Qasim,Male,15,1.6699999999999999,enroll,First Probation,L1F25BSCS0531@ucp.edu.pk,
+82,L1F25BSCS0543,Rohaan Khan,Male,15,1.9099999999999999,enroll,First Probation,L1F25BSCS0543@ucp.edu.pk,"All New, B- required"
+83,L1F25BSCS0546,Anas  Mehmood ,Male,15,1.71,enroll,First Probation,L1F25BSCS0546@ucp.edu.pk,
+84,L1F25BSCS0562,Sheikh Muhammad Abu Bakar,Male,15,1.78,enroll,First Probation,L1F25BSCS0562@ucp.edu.pk,"All New, B- required"
+85,L1F25BSCS0567,Hamza  Baqar,Male,15,1.02,enroll,First Probation,L1F25BSCS0567@ucp.edu.pk,
+86,L1F25BSCS0569,Muhammed Umer Naeem,Male,15,1.9099999999999999,enroll,First Probation,L1F25BSCS0569@ucp.edu.pk,"All New Courses, B- required, Mother + Sister visited"
+87,L1F25BSCS0570,Muhammad Shan Ali,Male,15,1.6699999999999999,enroll,First Probation,L1F25BSCS0570@ucp.edu.pk,"PreCal, Discrete Repeat, B- Required"
+88,L1F25BSCS0582,Razi Allah,Male,15,1.4399999999999999,enroll,First Probation,L1F25BSCS0582@ucp.edu.pk,
+89,L1F25BSCS0586,Fahad Mamoor,Male,15,1.1100000000000001,enroll,First Probation,L1F25BSCS0586@ucp.edu.pk,
+90,L1F25BSCS0596,Subhan Umer,Male,15,1.6899999999999999,enroll,First Probation,L1F25BSCS0596@ucp.edu.pk,"All New, B- required"
+91,L1F25BSCS0601,Abdullah  Khan,Male,13,0.87,enroll,First Probation,L1F25BSCS0601@ucp.edu.pk,
+92,L1F25BSCS0602,Seerat Fatima,Female,15,1.29,enroll,First Probation,L1F25BSCS0602@ucp.edu.pk,
+93,L1F25BSCS0611,Abdullah Rizwan,Male,15,1.6200000000000001,enroll,First Probation,L1F25BSCS0611@ucp.edu.pk,"All new courses, ITC in Summer, B Grade required"
+94,L1F25BSCS0612,Minahil Yasir,Female,15,1.4399999999999999,enroll,First Probation,L1F25BSCS0612@ucp.edu.pk,
+95,L1F25BSCS0620,Talha Irfan,Male,15,1.1299999999999999,enroll,First Probation,L1F25BSCS0620@ucp.edu.pk,
+96,L1F25BSCS0644,Hadia Amir,Female,15,1.95,enroll,First Probation,L1F25BSCS0644@ucp.edu.pk,
+97,L1F25BSCS0648,Awais  Ahmad,Male,15,1.29,enroll,First Probation,L1F25BSCS0648@ucp.edu.pk,
+98,L1F25BSCS0653,Raveel Yasir,Female,15,1.98,enroll,First Probation,L1F25BSCS0653@ucp.edu.pk,
+99,L1F25BSCS0657,Ahmad Ali,Male,15,1.49,enroll,First Probation,L1F25BSCS0657@ucp.edu.pk,"Repeat Discrete, B- Required"
+100,L1F25BSCS0660,M Adil  Sarfraz,Male,15,1.9299999999999999,enroll,First Probation,L1F25BSCS0660@ucp.edu.pk,"All New, B- required"
+101,L1F25BSCS0662,Abdullah Nouman,Male,15,1.9299999999999999,enroll,First Probation,L1F25BSCS0662@ucp.edu.pk,"All New Courses, Min B-"
+102,L1F25BSCS0663,وجیع الدین✨,Male,15,1.27,enroll,First Probation,L1F25BSCS0663@ucp.edu.pk,"Waiting for partents visit, Wants all new courses, B+ required"
+103,L1F25BSCS0678,Afraz Fahim,Male,15,0.70999999999999996,enroll,First Probation,L1F25BSCS0678@ucp.edu.pk,
+104,L1F25BSCS0690,Zukhruf Hadait Ullah,Male,15,1.8200000000000001,enroll,First Probation,L1F25BSCS0690@ucp.edu.pk,
+105,L1F25BSCS0692,Sami Ullah,Male,15,1.49,enroll,First Probation,L1F25BSCS0692@ucp.edu.pk,"ITC(T) Repeat, B- required"
+106,L1F25BSCS0694,Muhammad  Rehan,Male,15,1.53,enroll,First Probation,L1F25BSCS0694@ucp.edu.pk,"ITC (T) Repeat, B- Required"
+107,L1F25BSCS0695,Romail Zia,Male,15,1.6599999999999999,enroll,First Probation,L1F25BSCS0695@ucp.edu.pk,"ITC (T) Repeat, B- Required"
+108,L1F25BSCS0704,Tallal Atif,Male,15,1.95,enroll,First Probation,L1F25BSCS0704@ucp.edu.pk,"All New Courses, B- required"
+109,L1F25BSCS0705,Hamood Ahmer,Male,12,1.28,enroll,First Probation,L1F25BSCS0705@ucp.edu.pk,"ITC(T)+ BE + Discrete Repeat, 3 New courses except DLD B- Required"
+110,L1F25BSCS0716,Ali Hassan,Male,15,1.95,enroll,First Probation,L1F25BSCS0716@ucp.edu.pk,
+111,L1F25BSCS0723,Muhammad Talal Javed Khan Chandia,Male,15,1.2,enroll,First Probation,L1F25BSCS0723@ucp.edu.pk,
+112,L1F25BSCS0739,Abdul Momin,Male,15,1.8700000000000001,enroll,First Probation,L1F25BSCS0739@ucp.edu.pk,"All new courses, B- required"
+113,L1F25BSCS0740,Malaika Ch,Female,15,0.70999999999999996,enroll,First Probation,L1F25BSCS0740@ucp.edu.pk,
+114,L1F25BSCS0749,Irfan  Jafar,Male,15,0,enroll,First Probation,L1F25BSCS0749@ucp.edu.pk,
+115,L1F25BSCS0770,Aoun Kashif,Male,15,1.9399999999999999,enroll,First Probation,L1F25BSCS0770@ucp.edu.pk,"All New, B- required"
+116,L1F25BSCS0776,Qaisar Rehman,Male,15,1.8200000000000001,enroll,First Probation,L1F25BSCS0776@ucp.edu.pk,All New Courses. Min B-
+117,L1F25BSCS0783,Muhammad  Waqas ,Male,15,1.3300000000000001,enroll,First Probation,L1F25BSCS0783@ucp.edu.pk,
+118,L1F25BSCS0801,Mustafa Gillani,Male,15,1.9099999999999999,enroll,First Probation,L1F25BSCS0801@ucp.edu.pk,"All New Courses, Min B-"
+119,L1F25BSCS0802,Zyaan Imtiaz,Male,15,0.83999999999999997,enroll,First Probation,L1F25BSCS0802@ucp.edu.pk,"All New, B required, Mother visited"
+120,L1F25BSCS0822,Syed Faizan Javed,Male,15,1.3300000000000001,enroll,First Probation,L1F25BSCS0822@ucp.edu.pk,"ITC (T+L) Repeat, B- Required"
+121,L1F25BSCS0831,Zyaam Majid,Male,15,1.71,enroll,First Probation,L1F25BSCS0831@ucp.edu.pk,"Repet DS + Pre Cal, B- Required"
+122,L1F25BSCS0841,Muhammad Salman Shahbaz,Male,15,1.6899999999999999,enroll,First Probation,L1F25BSCS0841@ucp.edu.pk,"All New, B- required"
+123,L1F25BSCS0845,Faseeh Khan,Male,15,1.8500000000000001,enroll,First Probation,L1F25BSCS0845@ucp.edu.pk,"All New Courses, Min B-"
+124,L1F25BSCS0848,Syed Zohaib Hussain Bukhari,Male,15,1.0700000000000001,enroll,First Probation,L1F25BSCS0848@ucp.edu.pk,
+125,L1F25BSCS0850,Muhammad Ahmed Rana,Male,15,1.75,enroll,First Probation,L1F25BSCS0850@ucp.edu.pk,"All New Courses, Min B-"
+126,L1F25BSCS0853,Muhammad Ibrahim,Male,15,1.6000000000000001,enroll,First Probation,L1F25BSCS0853@ucp.edu.pk,
+127,L1F25BSCS0862,Khuzaima Asif,Male,15,1.1499999999999999,enroll,First Probation,L1F25BSCS0862@ucp.edu.pk,
+128,L1F25BSCS0863,Abeadullah Abdul Ahad Siddique,Male,15,1.96,enroll,First Probation,L1F25BSCS0863@ucp.edu.pk,
+129,L1F25BSCS0865,Riyan Ahmad,Male,15,1.71,enroll,First Probation,L1F25BSCS0865@ucp.edu.pk,
+130,L1F25BSCS0866,Saqib Shakoor,Male,15,0.95999999999999996,enroll,First Probation,L1F25BSCS0866@ucp.edu.pk,
+131,L1F25BSCS0868,Zunair  Hassan,Male,15,1.73,enroll,First Probation,L1F25BSCS0868@ucp.edu.pk,
+132,L1F25BSCS0878,Ahmad  Irfan ,Male,15,1.6499999999999999,enroll,First Probation,L1F25BSCS0878@ucp.edu.pk,2
+133,L1F25BSCS0879,Ali  Khawar,Male,15,1.8899999999999999,enroll,First Probation,L1F25BSCS0879@ucp.edu.pk,
+134,L1F25BSCS0882,Khadija  Rizwan,Female,15,1.9099999999999999,enroll,First Probation,L1F25BSCS0882@ucp.edu.pk,
+135,L1F25BSCS0886,Husnain Ali,Male,15,1.6200000000000001,enroll,First Probation,L1F25BSCS0886@ucp.edu.pk,
+136,L1F25BSCS0889,Momina Qasim,Female,15,1.51,enroll,First Probation,L1F25BSCS0889@ucp.edu.pk,
+137,L1F25BSCS0891,Ahmed Moez,Male,15,1.95,enroll,First Probation,L1F25BSCS0891@ucp.edu.pk,All New Courses. Min B-
+138,L1F25BSCS0894,Ume Aman,Female,15,1.6200000000000001,enroll,First Probation,L1F25BSCS0894@ucp.edu.pk,"All new courses, B grade minimum"
+139,L1F25BSCS0899,Muhammad Ibrahim,Male,15,1.3999999999999999,enroll,First Probation,L1F25BSCS0899@ucp.edu.pk,"ITC (T+L) Repeat, B- Required"
+140,L1F25BSCS0905,Rabi Zeeshan,Male,15,1.3999999999999999,enroll,First Probation,L1F25BSCS0905@ucp.edu.pk,"BE Repeat, B grade required"
+141,L1F25BSCS0907,Aleeha Shahid,Female,15,1.1299999999999999,enroll,First Probation,L1F25BSCS0907@ucp.edu.pk,
+142,L1F25BSCS0912,Muhammad Abdullah ,Male,15,1.49,enroll,First Probation,L1F25BSCS0912@ucp.edu.pk,
+143,L1F25BSCS0921,Hunain Amjad,Male,15,1.1299999999999999,enroll,First Probation,L1F25BSCS0921@ucp.edu.pk,
+144,L1F25BSCS0926,Humayun  Khan,Male,15,0.94999999999999996,enroll,First Probation,L1F25BSCS0926@ucp.edu.pk,
+145,L1F25BSCS0933,Fassih Imran,Male,4,0.5,enroll,First Probation,L1F25BSCS0933@ucp.edu.pk,
+146,L1F25BSCS0935,Muhammad Ahmed Arslan,Male,15,1.4399999999999999,enroll,First Probation,L1F25BSCS0935@ucp.edu.pk,
+147,L1F25BSCS0936,Muhammad Ikrash  Abdul Hameed ,Male,15,1.6699999999999999,enroll,First Probation,L1F25BSCS0936@ucp.edu.pk,"ITC(T)  Repeat, B- grade required"
+148,L1F25BSCS0937,Muzammil  Farooq ,Male,15,1.3300000000000001,enroll,First Probation,L1F25BSCS0937@ucp.edu.pk,"All New, B required, Repeat declined"
+149,L1F25BSCS0941,Muhammad Sahil Chaudhary ,Male,15,1.8899999999999999,enroll,First Probation,L1F25BSCS0941@ucp.edu.pk,"Repeat Discrete, Min C+ required"
+150,L1F25BSCS0942,Rohail Ahmad,Male,12,0.5,enroll,First Probation,L1F25BSCS0942@ucp.edu.pk,"Prev Semester Repeat, B- Required"
+151,L1F25BSCS0944,Ammar  Yasir,Male,15,1.1799999999999999,enroll,First Probation,L1F25BSCS0944@ucp.edu.pk,
+152,L1F25BSCS0945,Alisha Shafqat,Female,15,1.98,enroll,First Probation,L1F25BSCS0945@ucp.edu.pk,"BE(T) Repeat, C+ Required"
+153,L1F25BSCS0949,Ali Noor,Male,15,0.27000000000000002,enroll,First Probation,L1F25BSCS0949@ucp.edu.pk,
+154,L1F25BSCS0961,Usman Hafeez,Male,15,0.070000000000000007,enroll,First Probation,L1F25BSCS0961@ucp.edu.pk,
+155,L1F25BSCS0963,Khadija Rasheed,Female,15,1.8700000000000001,enroll,First Probation,L1F25BSCS0963@ucp.edu.pk,
+156,L1F25BSCS0966,Muhammad Allyan Nadeem,Male,15,1.96,enroll,First Probation,L1F25BSCS0966@ucp.edu.pk,
+157,L1F25BSCS0968,Wasif Maqsood,Male,15,1.5600000000000001,enroll,First Probation,L1F25BSCS0968@ucp.edu.pk,"BE (T) Repeat, B- grade required"
+158,L1F25BSCS0973,Abdullah Ahsan,Male,15,1.78,enroll,First Probation,L1F25BSCS0973@ucp.edu.pk,"BE(T) Repeat, C+ Required"
+159,L1F25BSCS0974,Aima  Shahid,Female,15,1.6899999999999999,enroll,First Probation,L1F25BSCS0974@ucp.edu.pk,"All New Courses, Min B-"
+160,L1F25BSCS0978,Syeda Kashaf,Female,15,1.96,enroll,First Probation,L1F25BSCS0978@ucp.edu.pk,
+161,L1F25BSCS0979,Muhammad Faizan,Male,15,1.8600000000000001,enroll,First Probation,L1F25BSCS0979@ucp.edu.pk,
+162,L1F25BSCS0983,Zaman Akraam ,Male,15,1.8700000000000001,enroll,First Probation,L1F25BSCS0983@ucp.edu.pk,
+163,L1F25BSCS0986,Muhammad Zikriya Muhammad Farooq,Male,15,1.6200000000000001,enroll,First Probation,L1F25BSCS0986@ucp.edu.pk,"ITC (T) Repeat, B- Required"
+164,L1F25BSCS0987,Laiba Farid,Female,15,1.8200000000000001,enroll,First Probation,L1F25BSCS0987@ucp.edu.pk,All New Courses. Min B-
+165,L1F25BSCS1000,Ali Hussnain,Male,15,0,enroll,First Probation,L1F25BSCS1000@ucp.edu.pk,
+166,L1F25BSCS1005,Muhammad  Ali,Male,15,1.4199999999999999,enroll,First Probation,L1F25BSCS1005@ucp.edu.pk,"BE(L) Repeat, C+ Required"
+167,L1F25BSCS1006,Marwah  Khan,Female,15,1.78,enroll,First Probation,L1F25BSCS1006@ucp.edu.pk,"BE(T) Repeat, C+ Required"
+168,L1F25BSCS1014,Zopasha Khan,Female,15,1.78,enroll,First Probation,L1F25BSCS1014@ucp.edu.pk,"ITC L+T Repeat, C+ required"
+169,L1F25BSCS1019,Muhammad Abdullah Bin Zafar,Male,15,1.6899999999999999,enroll,First Probation,L1F25BSCS1019@ucp.edu.pk,"ITC (T+L) Repeat, C+ Required"
+,,,,,,,,5,
+1,L1F25BSCS0032,Muneeb Khuram,Male,15,0,enroll,Blocked,L1F25BSCS0032@ucp.edu.pk,
+2,L1F25BSCS0033,Harram Khalid,Female,15,0,enroll,Blocked,L1F25BSCS0033@ucp.edu.pk,
+3,L1F25BSCS0075,Abdullah Qayyum,Male,15,0,enroll,Blocked,L1F25BSCS0075@ucp.edu.pk,
+4,L1F25BSCS0078,Amaira Khaliq,Female,15,0,enroll,Blocked,L1F25BSCS0078@ucp.edu.pk,
+5,L1F25BSCS0083,Ramisha Shakil,Female,15,0,enroll,Blocked,L1F25BSCS0083@ucp.edu.pk,
+6,L1F25BSCS0105,Muhammad  Rizwan,Male,15,0,enroll,Blocked,L1F25BSCS0105@ucp.edu.pk,
+7,L1F25BSCS0116,Hania  Haider,Female,15,0,enroll,Blocked,L1F25BSCS0116@ucp.edu.pk,
+8,L1F25BSCS0121,Muhammad Faizan Javed Gujjar,Male,15,0,enroll,Blocked,L1F25BSCS0121@ucp.edu.pk,
+9,L1F25BSCS0154,Abeera Faisal,Female,15,0,enroll,Blocked,L1F25BSCS0154@ucp.edu.pk,
+10,L1F25BSCS0159,Waleed  Ahmad ,Male,15,0,enroll,Blocked,L1F25BSCS0159@ucp.edu.pk,
+11,L1F25BSCS0162,Muhammad Shaban Nasir,Male,15,0,enroll,Blocked,L1F25BSCS0162@ucp.edu.pk,
+12,L1F25BSCS0170,Eid  Muhammad,Male,15,0.070000000000000007,enroll,Blocked,L1F25BSCS0170@ucp.edu.pk,
+13,L1F25BSCS0190,Muhammad Rabee Umar,Male,15,0,enroll,Blocked,L1F25BSCS0190@ucp.edu.pk,
+14,L1F25BSCS0197,Ali Hassan,Male,15,0,enroll,Blocked,L1F25BSCS0197@ucp.edu.pk,
+15,L1F25BSCS0204,Muhammad Hammad  Faryad Hussain ,Male,15,0.070000000000000007,enroll,Blocked,L1F25BSCS0204@ucp.edu.pk,
+16,L1F25BSCS0206,Abdul Saboor,Male,15,0,enroll,Blocked,L1F25BSCS0206@ucp.edu.pk,
+17,L1F25BSCS0213,Ubaid Ur Rahmaan,Male,15,0,enroll,Blocked,L1F25BSCS0213@ucp.edu.pk,
+18,L1F25BSCS0216,Muhammad Suleman,Male,15,0,enroll,Blocked,L1F25BSCS0216@ucp.edu.pk,
+19,L1F25BSCS0223,Daniyal Javed,Male,15,0,enroll,Blocked,L1F25BSCS0223@ucp.edu.pk,
+20,L1F25BSCS0228,Muhammad  Atif,Male,15,0,enroll,Blocked,L1F25BSCS0228@ucp.edu.pk,
+21,L1F25BSCS0231,Muhammad Usman,Male,15,1.1599999999999999,enroll,Blocked,L1F25BSCS0231@ucp.edu.pk,
+22,8,Ameer Ali,Male,15,0.20000000000000001,enroll,Blocked,L1F25BSCS0246@ucp.edu.pk,
+23,L1F25BSCS0269,Muhammad Zeeshan Tahir,Male,15,0.83999999999999997,enroll,Blocked,L1F25BSCS0269@ucp.edu.pk,
+24,L1F25BSCS0271,Muhammad Ahmad  Nawaz,Male,15,0,enroll,Blocked,L1F25BSCS0271@ucp.edu.pk,
+25,L1F25BSCS0279,Shayan Aqeel,Male,15,0,enroll,Blocked,L1F25BSCS0279@ucp.edu.pk,
+26,L1F25BSCS0282,Danish Fareed,Male,15,0.68999999999999995,enroll,Blocked,L1F25BSCS0282@ucp.edu.pk,
+27,L1F25BSCS0290,Muhammad Ashad,Male,15,0,enroll,Blocked,L1F25BSCS0290@ucp.edu.pk,
+28,L1F25BSCS0305,Muhammad  Shahid ,Male,15,0,enroll,Blocked,L1F25BSCS0305@ucp.edu.pk,
+29,L1F25BSCS0314,Haseeb Rauf,Male,15,0,enroll,Blocked,L1F25BSCS0314@ucp.edu.pk,
+30,L1F25BSCS0318,Afnan  Afzal ,Male,15,0,enroll,Blocked,L1F25BSCS0318@ucp.edu.pk,
+31,L1F25BSCS0319,Muhammad Usman  Rashid ,Male,15,0.41999999999999998,enroll,Blocked,L1F25BSCS0319@ucp.edu.pk,
+32,L1F25BSCS0328,Ramish Ahmad,Male,15,0,enroll,Blocked,L1F25BSCS0328@ucp.edu.pk,
+33,L1F25BSCS0333,Mehroz  Hassan ,Male,15,0.27000000000000002,enroll,Blocked,L1F25BSCS0333@ucp.edu.pk,
+34,L1F25BSCS0335,Muhammad Arham Shabbir,Male,15,0,enroll,Blocked,L1F25BSCS0335@ucp.edu.pk,
+35,L1F25BSCS0352,M Umar Haider,Male,15,0.070000000000000007,enroll,Blocked,L1F25BSCS0352@ucp.edu.pk,
+36,L1F25BSCS0355,Malik Rubass,Male,15,0,enroll,Blocked,L1F25BSCS0355@ucp.edu.pk,
+37,L1F25BSCS0395,Abdul Raffy Amjad,Male,15,0.070000000000000007,enroll,Blocked,L1F25BSCS0395@ucp.edu.pk,
+38,L1F25BSCS0397,Abdul Rehman Saleem,Male,15,0,enroll,Blocked,L1F25BSCS0397@ucp.edu.pk,
+39,L1F25BSCS0402,Abdullah Atif,Male,15,0.17999999999999999,enroll,Blocked,L1F25BSCS0402@ucp.edu.pk,
+40,L1F25BSCS0404,Muhammad Awais,Male,15,0,enroll,Blocked,L1F25BSCS0404@ucp.edu.pk,
+41,L1F25BSCS0430,Mahnoor Muzaffar,Female,15,0,enroll,Blocked,L1F25BSCS0430@ucp.edu.pk,
+42,L1F25BSCS0431,Mariyam Shabir,Female,15,0,enroll,Blocked,L1F25BSCS0431@ucp.edu.pk,
+43,L1F25BSCS0499,Muhammad Faiz Ur Rehman,Male,15,0.17999999999999999,enroll,Blocked,L1F25BSCS0499@ucp.edu.pk,
+44,L1F25BSCS0535,Ayza  Afaq,Female,15,0,enroll,Blocked,L1F25BSCS0535@ucp.edu.pk,
+45,L1F25BSCS0539,Faisal Ashfaq,Male,15,1.53,enroll,Blocked,L1F25BSCS0539@ucp.edu.pk,
+46,L1F25BSCS0551,Musa Mrza,Male,15,0,enroll,Blocked,L1F25BSCS0551@ucp.edu.pk,
+47,L1F25BSCS0555,Aimen  Bilal,Female,15,0,enroll,Blocked,L1F25BSCS0555@ucp.edu.pk,
+48,L1F25BSCS0581,Muhammad  Waqas ,Male,15,0,enroll,Blocked,L1F25BSCS0581@ucp.edu.pk,
+49,L1F25BSCS0605,Sibtain Ali Arshad ,Male,12,0,enroll,Blocked,L1F25BSCS0605@ucp.edu.pk,
+50,L1F25BSCS0609,Zain Ul Abaidin Naeem,Male,15,0,enroll,Blocked,L1F25BSCS0609@ucp.edu.pk,
+51,L1F25BSCS0638,Syed Ghufran Abbas Zaidi,Male,15,0.72999999999999998,enroll,Blocked,L1F25BSCS0638@ucp.edu.pk,
+52,L1F25BSCS0640,Ali Hassan,Male,15,1.96,enroll,Blocked,L1F25BSCS0640@ucp.edu.pk,
+53,L1F25BSCS0641,Muhammad Umar,Male,15,0,enroll,Blocked,L1F25BSCS0641@ucp.edu.pk,
+54,L1F25BSCS0642,Tayyab Ali,Male,15,0,enroll,Blocked,L1F25BSCS0642@ucp.edu.pk,
+55,L1F25BSCS0672,Ayyan Rasheed,Male,15,0,enroll,Blocked,L1F25BSCS0672@ucp.edu.pk,
+56,L1F25BSCS0689,Muhammad  Kamran,Male,15,0,enroll,Blocked,L1F25BSCS0689@ucp.edu.pk,
+57,L1F25BSCS0697,Ali  Umair,Male,15,0.40000000000000002,enroll,Blocked,L1F25BSCS0697@ucp.edu.pk,
+58,L1F25BSCS0699,Abu Huraira Amjad Amjad Ali,Male,15,0.93000000000000005,enroll,Blocked,L1F25BSCS0699@ucp.edu.pk,
+59,L1F25BSCS0712,Zain  Ul Abdeen,Male,15,0.53000000000000003,enroll,Blocked,L1F25BSCS0712@ucp.edu.pk,
+60,L1F25BSCS0722,Shehroz  Khan,Male,15,0.28999999999999998,enroll,Blocked,L1F25BSCS0722@ucp.edu.pk,
+61,L1F25BSCS0728,Hussain Raza,Male,15,0.13,enroll,Blocked,L1F25BSCS0728@ucp.edu.pk,
+62,L1F25BSCS0742,Usama Rajput,Male,15,0.13,enroll,Blocked,L1F25BSCS0742@ucp.edu.pk,
+63,L1F25BSCS0760,Ahad Rehman,Male,15,0,enroll,Blocked,L1F25BSCS0760@ucp.edu.pk,
+64,L1F25BSCS0766,Muhammad Hussain Touqeer,Male,15,0.59999999999999998,enroll,Blocked,L1F25BSCS0766@ucp.edu.pk,
+65,L1F25BSCS0795,Zulqarnain M Mansha,Male,15,0.95999999999999996,enroll,Blocked,L1F25BSCS0795@ucp.edu.pk,
+66,L1F25BSCS0830,Muhammad Aqeel Ahmed,Male,15,1.3600000000000001,enroll,Blocked,L1F25BSCS0830@ucp.edu.pk,
+67,L1F25BSCS0836,Anas Abdullah Katal,Male,15,0,enroll,Blocked,L1F25BSCS0836@ucp.edu.pk,
+68,L1F25BSCS0842,Ahsan Sana,Male,15,0,enroll,Blocked,L1F25BSCS0842@ucp.edu.pk,
+69,L1F25BSCS0881,Soban Ahmed,Male,15,1.0700000000000001,enroll,Blocked,L1F25BSCS0881@ucp.edu.pk,
+70,L1F25BSCS0885, Hafiz Zaid Shahid ,Male,15,0,enroll,Blocked,L1F25BSCS0885@ucp.edu.pk,
+71,L1F25BSCS0887,Nimra Imtiaz ,Female,15,0,enroll,Blocked,L1F25BSCS0887@ucp.edu.pk,
+72,L1F25BSCS0890,Anha Qaiser,Female,15,0.33000000000000002,enroll,Blocked,L1F25BSCS0890@ucp.edu.pk,
+73,L1F25BSCS0903,Zaeem  Shahzad ,Male,15,0,enroll,Blocked,L1F25BSCS0903@ucp.edu.pk,
+74,L1F25BSCS0904,Ali Zaib,Male,15,0.20000000000000001,enroll,Blocked,L1F25BSCS0904@ucp.edu.pk,
+75,L1F25BSCS0908,Umama Abid,Female,13,0,enroll,Blocked,L1F25BSCS0908@ucp.edu.pk,
+76,L1F25BSCS0909,Muhammad Kamran Saleem,Male,15,0,enroll,Blocked,L1F25BSCS0909@ucp.edu.pk,
+77,L1F25BSCS0918,Hira Bilal,Female,15,0,enroll,Blocked,L1F25BSCS0918@ucp.edu.pk,
+78,L1F25BSCS0922,Muhammad Zaid Khan,Male,15,0,enroll,Blocked,L1F25BSCS0922@ucp.edu.pk,
+79,L1F25BSCS0946,Joune Haider,Male,15,0,enroll,Blocked,L1F25BSCS0946@ucp.edu.pk,
+80,L1F25BSCS0948,Haziq Anwar,Male,15,0,enroll,Blocked,L1F25BSCS0948@ucp.edu.pk,
+81,L1F25BSCS0954,Abdullah Talib,Male,15,0.070000000000000007,enroll,Blocked,L1F25BSCS0954@ucp.edu.pk,
+82,L1F25BSCS0969,Anas Ishaq,Male,15,0.41999999999999998,enroll,Blocked,L1F25BSCS0969@ucp.edu.pk,
+83,L1F25BSCS0980,Nasr Ullah,Male,15,0.13,enroll,Blocked,L1F25BSCS0980@ucp.edu.pk,
+84,L1F25BSCS0985,M Afaq Kiani,Male,15,0,enroll,Blocked,L1F25BSCS0985@ucp.edu.pk,
+85,L1F25BSCS0991,Rana Muhammad Hassan,Male,15,0.40000000000000002,enroll,Blocked,L1F25BSCS0991@ucp.edu.pk,
+86,L1F25BSCS0995,Saad Abdullah,Male,15,0,enroll,Blocked,L1F25BSCS0995@ucp.edu.pk,
+87,L1F25BSCS0997,Adnan Haidar,Male,15,0,enroll,Blocked,L1F25BSCS0997@ucp.edu.pk,
+88,L1F25BSCS1008,Muhammad Zohaib  Ishfaq ,Male,15,0,enroll,Blocked,L1F25BSCS1008@ucp.edu.pk,
+
