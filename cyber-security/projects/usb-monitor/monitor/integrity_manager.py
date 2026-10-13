@@ -19,8 +19,9 @@ class IntegrityManager:
             hash_dir: Directory to store hash files. Defaults to ~/usb-monitor/reports
         """
         if hash_dir is None:
-            home = str(Path.home())
-            hash_dir = os.path.join(home, "usb-monitor", "reports")
+            # Default to <project_root>/reports
+            project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            hash_dir = os.path.join(project_root, "reports")
 
         self.hash_dir = hash_dir
         os.makedirs(self.hash_dir, exist_ok=True)

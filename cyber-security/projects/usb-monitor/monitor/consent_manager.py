@@ -36,7 +36,7 @@ WHAT WILL NOT BE MONITORED:
   ✗ Any other directories outside Documents
 
 DATA STORAGE:
-  • All logs saved to: ~/usb-monitor/reports/
+  • All logs saved to: reports/ in project root
   • Format: JSON (human-readable)
   • You can view and delete logs anytime
   • Data is stored locally only
@@ -57,12 +57,13 @@ Type your choice:
   NO     - Exit without monitoring (must type exactly "NO")
 """
 
-    def __init__(self):
+    def __init__(self, reports_dir=None):
         """Initialize consent manager."""
         self.user_consented = False
-        self.consent_record_path = os.path.join(
-            str(Path.home()), "usb-monitor", "reports", "consent_record.json"
-        )
+        if reports_dir is None:
+            project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            reports_dir = os.path.join(project_root, "reports")
+        self.consent_record_path = os.path.join(reports_dir, "consent_record.json")
         os.makedirs(os.path.dirname(self.consent_record_path), exist_ok=True)
 
     def display_consent_screen(self):

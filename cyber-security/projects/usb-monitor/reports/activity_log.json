@@ -1,0 +1,534 @@
+{
+  "version": "1.0",
+  "total_events": 37,
+  "last_updated": "2026-10-14T01:46:39.360219",
+  "events": [
+    {
+      "timestamp": "2026-10-13T23:32:13.192256",
+      "event_type": "DEMO_SAMPLE",
+      "details": {
+        "info": "Sample event for integrity demonstration"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:34:50.217304",
+      "event_type": "MONITORING_STARTED",
+      "details": {
+        "reason": "User consented",
+        "application": "USB-Monitor v0.1.0"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:35:38.226120",
+      "event_type": "MONITORING_STOPPED",
+      "details": {
+        "reason": "User stopped monitoring"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:35:48.603200",
+      "event_type": "MONITORING_STARTED",
+      "details": {
+        "reason": "User consented",
+        "application": "USB-Monitor v0.1.0"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:35:54.605457",
+      "event_type": "MONITORING_STOPPED",
+      "details": {
+        "reason": "User stopped monitoring"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:38:42.278556",
+      "event_type": "MONITORING_STARTED",
+      "details": {
+        "reason": "User consented",
+        "application": "USB-Monitor v0.1.0"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:38:46.281400",
+      "event_type": "MONITORING_STOPPED",
+      "details": {
+        "reason": "User stopped monitoring"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:39:12.561199",
+      "event_type": "MONITORING_STARTED",
+      "details": {
+        "reason": "User consented",
+        "application": "USB-Monitor v0.1.0"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:40:00.571331",
+      "event_type": "MONITORING_STOPPED",
+      "details": {
+        "reason": "User stopped monitoring"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:40:23.747815",
+      "event_type": "MONITORING_STARTED",
+      "details": {
+        "reason": "User consented",
+        "application": "USB-Monitor v0.1.0"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:40:54.801211",
+      "event_type": "MONITORING_STOPPED",
+      "details": {
+        "reason": "User stopped monitoring"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:10.905143",
+      "event_type": "MONITORING_STARTED",
+      "details": {
+        "reason": "User consented",
+        "application": "USB-Monitor v0.1.0"
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:17.223783",
+      "event_type": "USB_CONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/008",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "008",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:17.232361",
+      "event_type": "USB_CONNECTED",
+      "details": {
+        "device_name": "Unknown",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "Unknown",
+        "model_id": "Unknown",
+        "serial": "Unknown",
+        "bus_num": "Unknown",
+        "dev_num": "Unknown",
+        "speed": "Unknown",
+        "usb_driver": "usb-storage",
+        "usb_interfaces": "Unknown",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:21.002263",
+      "event_type": "USB_DISCONNECTED",
+      "details": {
+        "device_name": "Unknown",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "Unknown",
+        "model_id": "Unknown",
+        "serial": "Unknown",
+        "bus_num": "Unknown",
+        "dev_num": "Unknown",
+        "speed": "Unknown",
+        "usb_driver": "usb-storage",
+        "usb_interfaces": "Unknown",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:21.009879",
+      "event_type": "USB_DISCONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/008",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "008",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:27.626686",
+      "event_type": "USB_CONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/009",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "009",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:27.632932",
+      "event_type": "USB_CONNECTED",
+      "details": {
+        "device_name": "Unknown",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "Unknown",
+        "model_id": "Unknown",
+        "serial": "Unknown",
+        "bus_num": "Unknown",
+        "dev_num": "Unknown",
+        "speed": "Unknown",
+        "usb_driver": "usb-storage",
+        "usb_interfaces": "Unknown",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:28.363438",
+      "event_type": "USB_DISCONNECTED",
+      "details": {
+        "device_name": "Unknown",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "Unknown",
+        "model_id": "Unknown",
+        "serial": "Unknown",
+        "bus_num": "Unknown",
+        "dev_num": "Unknown",
+        "speed": "Unknown",
+        "usb_driver": "usb-storage",
+        "usb_interfaces": "Unknown",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:28.373590",
+      "event_type": "USB_DISCONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/009",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "009",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:32.286679",
+      "event_type": "USB_CONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/010",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-9",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "010",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:32.293288",
+      "event_type": "USB_CONNECTED",
+      "details": {
+        "device_name": "Unknown",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-9/1-9:1.0",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "Unknown",
+        "model_id": "Unknown",
+        "serial": "Unknown",
+        "bus_num": "Unknown",
+        "dev_num": "Unknown",
+        "speed": "Unknown",
+        "usb_driver": "usb-storage",
+        "usb_interfaces": "Unknown",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:33.157042",
+      "event_type": "USB_DISCONNECTED",
+      "details": {
+        "device_name": "Unknown",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-9/1-9:1.0",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "Unknown",
+        "model_id": "Unknown",
+        "serial": "Unknown",
+        "bus_num": "Unknown",
+        "dev_num": "Unknown",
+        "speed": "Unknown",
+        "usb_driver": "usb-storage",
+        "usb_interfaces": "Unknown",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:33.163928",
+      "event_type": "USB_DISCONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/010",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-9",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "010",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": false,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-13T23:45:37.922696",
+      "event_type": "MONITORING_STOPPED",
+      "details": {
+        "reason": "User stopped monitoring"
+      }
+    },
+    {
+      "timestamp": "2026-10-14T00:14:27.121522",
+      "event_type": "MONITORING_STARTED",
+      "details": {
+        "reason": "User consented",
+        "application": "USB-Monitor v0.1.0"
+      }
+    },
+    {
+      "timestamp": "2026-10-14T00:14:31.965306",
+      "event_type": "USB_CONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/011",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "011",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": true,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-14T00:14:35.583207",
+      "event_type": "USB_DISCONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/011",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "011",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": true,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-14T00:14:39.963017",
+      "event_type": "USB_CONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/012",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "012",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": true,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-14T00:14:42.821554",
+      "event_type": "USB_DISCONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/012",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "012",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": true,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-14T00:14:44.930240",
+      "event_type": "USB_CONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/013",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "013",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": true,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-14T00:14:46.437717",
+      "event_type": "USB_DISCONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/013",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-2",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "013",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": true,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-14T00:14:49.119770",
+      "event_type": "USB_CONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/014",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-9",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "014",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": true,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-14T00:14:50.626950",
+      "event_type": "USB_DISCONNECTED",
+      "details": {
+        "device_name": "/dev/bus/usb/001/014",
+        "device_path": "/devices/pci0000:00/0000:00:14.0/usb1/1-9",
+        "vendor": "SanDisk Corp.",
+        "model": "Cruzer Blade",
+        "vendor_id": "0781",
+        "model_id": "5567",
+        "serial": "AS_Mass_Storage",
+        "bus_num": "001",
+        "dev_num": "014",
+        "speed": "Unknown",
+        "usb_driver": "usb",
+        "usb_interfaces": ":080650:",
+        "is_storage": true,
+        "storage_volumes": []
+      }
+    },
+    {
+      "timestamp": "2026-10-14T00:14:54.161307",
+      "event_type": "MONITORING_STOPPED",
+      "details": {
+        "reason": "User stopped monitoring"
+      }
+    },
+    {
+      "timestamp": "2026-10-14T01:46:34.334038",
+      "event_type": "MONITORING_STARTED",
+      "details": {
+        "reason": "User consented",
+        "application": "USB-Monitor v0.1.0"
+      }
+    },
+    {
+      "timestamp": "2026-10-14T01:46:39.359023",
+      "event_type": "MONITORING_STOPPED",
+      "details": {
+        "reason": "User stopped monitoring"
+      }
+    }
+  ]
+}

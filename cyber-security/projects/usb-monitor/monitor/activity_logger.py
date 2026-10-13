@@ -19,8 +19,9 @@ class ActivityLogger:
             log_dir: Directory to store logs. Defaults to ~/usb-monitor/reports
         """
         if log_dir is None:
-            home = str(Path.home())
-            log_dir = os.path.join(home, "usb-monitor", "reports")
+            # Default to <project_root>/reports
+            project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            log_dir = os.path.join(project_root, "reports")
 
         self.log_dir = log_dir
         self.log_file_path = os.path.join(log_dir, "activity_log.json")

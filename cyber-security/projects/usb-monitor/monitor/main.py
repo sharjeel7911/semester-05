@@ -137,8 +137,63 @@ class USBMonitorApp:
         print()
 
 
+def demonstrate_tampering():
+    """Demonstrate Stage 8: modifying the log changes its SHA-256 hash."""
+    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    reports_dir = os.path.join(project_root, "reports")
+    log_file = os.path.join(reports_dir, "activity_log.json")
+    
+    integrity_mgr = IntegrityManager(hash_dir=reports_dir)
+    hash_file = integrity_mgr.get_hash_file_path(log_file)
+
+    UserInterface.print_header("STAGE 8: DATA INTEGRITY & TAMPER DEMONSTRATION")
+
+    if not os.path.exists(log_file) or not os.path.exists(hash_file):
+        UserInterface.print_warning("No existing log/hash found. Generating sample log first...")
+        logger = ActivityLogger(log_dir=reports_dir)
+        logger.log_event("DEMO_SAMPLE", {"info": "Sample event for integrity demonstration"})
+        logger.save_log_to_json()
+        h = integrity_mgr.calculate_hash(log_file)
+        integrity_mgr.save_hash(log_file, h)
+
+    # 1. Verify authentic state
+    UserInterface.print_section("1. Verifying Authentic File")
+    result = integrity_mgr.verify_integrity(log_file, hash_file)
+    UserInterface.display_hash_verification(result)
+
+    # 2. Simulate malicious tampering
+    UserInterface.print_section("2. Simulating Unauthorized Log Tampering")
+    with open(log_file, "r") as f:
+        original_content = f.read()
+
+    # Append a forged modification
+    tampered_content = original_content + "\n<!-- Tampered entry inserted without updating hash -->"
+    with open(log_file, "w") as f:
+        f.write(tampered_content)
+    UserInterface.print_warning("Tampered log written (added unauthorized trailing line).")
+
+    # 3. Re-verify to detect tampering
+    UserInterface.print_section("3. Re-verifying Integrity After Modification")
+    tampered_result = integrity_mgr.verify_integrity(log_file, hash_file)
+    UserInterface.display_hash_verification(tampered_result)
+
+    # 4. Restore original log
+    with open(log_file, "w") as f:
+        f.write(original_content)
+    UserInterface.print_success("Restored original log file.")
+
+
 def main():
     """Entry point."""
+    import argparse
+    parser = argparse.ArgumentParser(description="Consent-Based USB Activity Monitoring System")
+    parser.add_argument("--demo-tamper", action="store_true", help="Demonstrate Stage 8: how altering log invalidates SHA-256 hash")
+    args = parser.parse_args()
+
+    if args.demo_tamper:
+        demonstrate_tampering()
+        return
+
     try:
         app = USBMonitorApp()
         app.run()

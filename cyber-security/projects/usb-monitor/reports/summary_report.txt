@@ -1,0 +1,48 @@
+==============================================================================
+                   USB ACTIVITY MONITORING AUDIT REPORT
+==============================================================================
+Generated At : 2026-10-14 01:46:39
+Total Events : 37
+Log File     : /home/shar/0repos/semesters/semester-05/cyber-security/projects/usb-monitor/reports/activity_log.json
+Hash File    : /home/shar/0repos/semesters/semester-05/cyber-security/projects/usb-monitor/reports/activity_log.json.sha256
+------------------------------------------------------------------------------
+TIMESTAMP              | EVENT TYPE           | DETAILS
+------------------------------------------------------------------------------
+2026-10-13T23:32:13    | DEMO_SAMPLE          | info: Sample event for integrity demonstration
+2026-10-13T23:34:50    | MONITORING_STARTED   | reason: User consented, application: USB-Monitor v0.1.0
+2026-10-13T23:35:38    | MONITORING_STOPPED   | reason: User stopped monitoring
+2026-10-13T23:35:48    | MONITORING_STARTED   | reason: User consented, application: USB-Monitor v0.1.0
+2026-10-13T23:35:54    | MONITORING_STOPPED   | reason: User stopped monitoring
+2026-10-13T23:38:42    | MONITORING_STARTED   | reason: User consented, application: USB-Monitor v0.1.0
+2026-10-13T23:38:46    | MONITORING_STOPPED   | reason: User stopped monitoring
+2026-10-13T23:39:12    | MONITORING_STARTED   | reason: User consented, application: USB-Monitor v0.1.0
+2026-10-13T23:40:00    | MONITORING_STOPPED   | reason: User stopped monitoring
+2026-10-13T23:40:23    | MONITORING_STARTED   | reason: User consented, application: USB-Monitor v0.1.0
+2026-10-13T23:40:54    | MONITORING_STOPPED   | reason: User stopped monitoring
+2026-10-13T23:45:10    | MONITORING_STARTED   | reason: User consented, application: USB-Monitor v0.1.0
+2026-10-13T23:45:17    | USB_CONNECTED        | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-13T23:45:17    | USB_CONNECTED        | SanDisk Corp. Cruzer Blade
+2026-10-13T23:45:21    | USB_DISCONNECTED     | SanDisk Corp. Cruzer Blade
+2026-10-13T23:45:21    | USB_DISCONNECTED     | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-13T23:45:27    | USB_CONNECTED        | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-13T23:45:27    | USB_CONNECTED        | SanDisk Corp. Cruzer Blade
+2026-10-13T23:45:28    | USB_DISCONNECTED     | SanDisk Corp. Cruzer Blade
+2026-10-13T23:45:28    | USB_DISCONNECTED     | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-13T23:45:32    | USB_CONNECTED        | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-13T23:45:32    | USB_CONNECTED        | SanDisk Corp. Cruzer Blade
+2026-10-13T23:45:33    | USB_DISCONNECTED     | SanDisk Corp. Cruzer Blade
+2026-10-13T23:45:33    | USB_DISCONNECTED     | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-13T23:45:37    | MONITORING_STOPPED   | reason: User stopped monitoring
+2026-10-14T00:14:27    | MONITORING_STARTED   | reason: User consented, application: USB-Monitor v0.1.0
+2026-10-14T00:14:31    | USB_CONNECTED        | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-14T00:14:35    | USB_DISCONNECTED     | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-14T00:14:39    | USB_CONNECTED        | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-14T00:14:42    | USB_DISCONNECTED     | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-14T00:14:44    | USB_CONNECTED        | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-14T00:14:46    | USB_DISCONNECTED     | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-14T00:14:49    | USB_CONNECTED        | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-14T00:14:50    | USB_DISCONNECTED     | SanDisk Corp. Cruzer Blade (S/N: AS_Mass_Storage)
+2026-10-14T00:14:54    | MONITORING_STOPPED   | reason: User stopped monitoring
+2026-10-14T01:46:34    | MONITORING_STARTED   | reason: User consented, application: USB-Monitor v0.1.0
+2026-10-14T01:46:39    | MONITORING_STOPPED   | reason: User stopped monitoring
+==============================================================================

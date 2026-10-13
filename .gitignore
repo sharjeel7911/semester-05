@@ -24,6 +24,9 @@
 !**/*.tif
 !**/*.zip
 !**/*uv.lock
+!**/*.json
+!**/*.json.sha256
+
 
 # Ignore compiled binaries
 *.out
