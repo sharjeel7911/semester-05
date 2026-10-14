@@ -14,12 +14,11 @@ print(s.find("W"))
 
 # ====================================================================================================
 
+
 # %%
 # Exercise 3.2
 # Write a function count_vowels(text) that returns the number of vowels (a, e, i, o, u) in a
 # string. For example, count_vowels("Artificial") returns 5.
-
-
 def count_vowels(text: str) -> int:
     vowels = "aeiouAEIOU"
     count = 0
