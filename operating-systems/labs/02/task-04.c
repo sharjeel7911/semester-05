@@ -1,14 +1,15 @@
+// Write a C program to print the number of command line arguments and the arguments themselves.
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char **argv){
-  printf("No of arguments %d\n", argc);
+int main(int argc, char** argv) {
+	printf("No of arguments %d\n", argc);
 
-  if (argc > 1) {
-      int age = atoi(argv[1]);
-      printf("Your age is: %d\n", age);
-  } else {
-    printf("Please provide your age.\n");
-  }
-  return 0;
+	if (argc > 1) {
+		int age = atoi(argv[1]);
+		printf("Your age is: %d\n", age);
+	} else {
+		printf("Please provide your age.\n");
+	}
+	return 0;
 }
