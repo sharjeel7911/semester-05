@@ -21,49 +21,55 @@ string autoKeyDecrypt(string text, string key);
 // ==================================================
 
 int main() {
-  int choice;
-  while (true) {
-	  cout << "1. Caesar Cipher" << endl;
-	  cout << "2. Vigenere Cipher" << endl;
-	  cout << "3. Autokey Cipher" << endl;
-	  cout << "Enter choice: ";
-	  cin >> choice;
-	  cin.ignore();
+	int choice;
+	while (true) {
+		cout << "1. Caesar Cipher" << endl;
+		cout << "2. Vigenere Cipher" << endl;
+		cout << "3. Autokey Cipher" << endl;
+		cout << "Enter choice: ";
+		cin >> choice;
+		cin.ignore();
 
-	  if (choice == 1) runCaesar();
-	  else if (choice == 2) runVigenere();
-	  else if (choice == 3) runAutoKey();
-	  else cout << "Invalid choice." << endl;
+		if (choice == 1)
+			runCaesar();
+		else if (choice == 2)
+			runVigenere();
+		else if (choice == 3)
+			runAutoKey();
+		else
+			cout << "Invalid choice." << endl;
 
-	  cout << "Continue? (y/n): ";
-	  char cont;
-	  cin >> cont;
-	  cin.ignore();
-	  if (cont != 'y') break;
-  }
-  return 0;
+		cout << "Continue? (y/n): ";
+		char cont;
+		cin >> cont;
+		cin.ignore();
+		if (cont != 'y') break;
+	}
+	return 0;
 }
 
 // ==================================================
 
+// Caesar Cipher encrypts text by shifting letters by a key value. Decrypting reverses the shift.
+// "Hello World" -> KEY: 3 -> "Khoor Zruog"
 void runCaesar() {
-  string text;
-  int key;
+	string text;
+	int key;
 
-  cout << "\n--- Caesar Cipher ---" << endl;
+	cout << "\n--- Caesar Cipher ---" << endl;
 
-  cout << "Enter text: ";
-  getline(cin, text);
+	cout << "Enter text: ";
+	getline(cin, text);
 
-  cout << "Enter key (integer): ";
-  cin >> key;
-  cin.ignore();
+	cout << "Enter key (integer): ";
+	cin >> key;
+	cin.ignore();
 
-  string encrypted = caesarEncrypt(text, key);
-  string decrypted = caesarDecrypt(encrypted, key);
+	string encrypted = caesarEncrypt(text, key);
+	string decrypted = caesarDecrypt(encrypted, key);
 
-  cout << "Encrypted: " << encrypted << endl;
-  cout << "Decrypted: " << decrypted << endl;
+	cout << "Encrypted: " << encrypted << endl;
+	cout << "Decrypted: " << decrypted << endl;
 }
 string caesarEncrypt(string text, int key) {
 	for (char& c : text) {
@@ -86,24 +92,25 @@ string caesarDecrypt(string text, int key) {
 
 // ==================================================
 
+// Vigenere Cipher encrypts text using a key string. Each letter in the text is shifted by the corresponding letter in the key.
 void runVigenere() {
-  string text;
-  string key;
+	string text;
+	string key;
 
-  cout << "\n--- Vigenere Cipher ---" << endl;
+	cout << "\n--- Vigenere Cipher ---" << endl;
 
-  cout << "Enter text: ";
-  getline(cin, text);
+	cout << "Enter text: ";
+	getline(cin, text);
 
-  cout << "Enter key (string): ";
-  cin >> key;
-  cin.ignore();
+	cout << "Enter key (string): ";
+	cin >> key;
+	cin.ignore();
 
-  string encrypted = vigenereEncrypt(text, key);
-  string decrypted = vigenereDecrypt(encrypted, key);
+	string encrypted = vigenereEncrypt(text, key);
+	string decrypted = vigenereDecrypt(encrypted, key);
 
-  cout << "Encrypted: " << encrypted << endl;
-  cout << "Decrypted: " << decrypted << endl;
+	cout << "Encrypted: " << encrypted << endl;
+	cout << "Decrypted: " << decrypted << endl;
 }
 string vigenereEncrypt(string text, string key) {
 	int j = 0;
@@ -134,24 +141,25 @@ string vigenereDecrypt(string text, string key) {
 
 // ==================================================
 
+// Autokey Cipher encrypts text using a key string, but the key is extended with the plaintext itself. Decrypting requires reconstructing the key from the ciphertext.
 void runAutoKey() {
-  string text;
-  string key;
+	string text;
+	string key;
 
-  cout << "\n--- Autokey Cipher ---" << endl;
+	cout << "\n--- Autokey Cipher ---" << endl;
 
-  cout << "Enter text: ";
-  getline(cin, text);
+	cout << "Enter text: ";
+	getline(cin, text);
 
-  cout << "Enter key (string): ";
-  cin >> key;
-  cin.ignore();
+	cout << "Enter key (string): ";
+	cin >> key;
+	cin.ignore();
 
-  string encrypted = autoKeyEncrypt(text, key);
-  string decrypted = autoKeyDecrypt(encrypted, key);
+	string encrypted = autoKeyEncrypt(text, key);
+	string decrypted = autoKeyDecrypt(encrypted, key);
 
-  cout << "Encrypted: " << encrypted << endl;
-  cout << "Decrypted: " << decrypted << endl;
+	cout << "Encrypted: " << encrypted << endl;
+	cout << "Decrypted: " << decrypted << endl;
 }
 string autoKeyEncrypt(string text, string key) {
 	int j = 0;
