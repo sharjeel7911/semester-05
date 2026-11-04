@@ -1,0 +1,34 @@
+#define _GNU_SOURCE
+#include <stdio.h>
+#include <sched.h>
+#include <unistd.h>
+#include <sys/types.h>
+
+int main() {
+    cpu_set_set_t mask;    //The cpu_set_t data structure represents a set of CPUs.     A CPU core mask (or CPU affinity mask) is a bitmask where each binary bit corresponds to a specific logical processor or core in a computer system.
+
+
+    pid_t pid = getpid();
+
+    // 1. Clear the CPU core mask
+    CPU_ZERO(&mask);      //Clears set, so that it contains no CPUs.
+
+    // 2. Add CPU Core 0 to the mask
+    CPU_SET(0, &mask);    // macro adds CPU core 0 to the given cpu_set_t bit mask.
+
+    // 3. Apply the affinity mask to the current process
+    if (sched_setaffinity(pid, sizeof(cpu_set_t), &mask) == -1) {
+        perror("sched_setaffinity failed");
+        return 1;
+    }
+
+    printf("Successfully pinned process %d to CPU Core 0\n", pid);
+
+    // Keep the program running so you can verify it
+    printf("Running... Press Ctrl+C to exit.\n");
+    while (1) {
+        // Simulating work
+    }
+
+    return 0;
+}
