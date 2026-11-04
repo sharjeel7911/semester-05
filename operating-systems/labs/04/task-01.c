@@ -81,6 +81,7 @@ int main(int argc, char** argv) {
 		close(pfd_1[READ]);
 
 		// Sort array
+		// qsort(buffer, buffer_size, sizeof(data_type), cmp_func);
 		qsort(arr, n, sizeof(int), cmp_int);
 
 		// Send sorted array to parent
