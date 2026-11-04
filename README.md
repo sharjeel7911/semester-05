@@ -2,7 +2,7 @@
 
 ## Operating Systems
 - **Lecture:** Mahrukh Batool 
-- **Lab:** Awais
+- **Lab:** Awais Arif
 
 ## Information Security
 - **Lecture:** Ali Raza
