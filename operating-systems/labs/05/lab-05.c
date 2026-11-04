@@ -1,122 +1,173 @@
+/*
+  Write a C program in which the parent process receives an integer array through
+  command-line arguments and passes it to each of its two child processes using pipe.
+  Child1 process will find the sum of array elements, child2 will find min of array
+  elements and return their respective results back to parent process using separate pipes.
+  The parent processes will print min and sum value on the terminal.
+  HINT: You need to create 4 separate pipes for this task.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/types.h>
 #include <sys/wait.h>
 #include <unistd.h>
 
 #define READ 0
 #define WRITE 1
 
-void calculate_sum(int p1[], int p2[], int n) {
-	int arr[n], sum = 0;
-
-	close(p1[WRITE]);
-	close(p2[READ]);
-
-	read(p1[READ], arr, sizeof(arr));
-
-	for (int i = 0; i < n; i++) sum += arr[i];
-
-	write(p2[WRITE], &sum, sizeof(sum));
-
-	close(p1[READ]);
-	close(p2[WRITE]);
-	exit(0);
+int find_sum(const int* arr, int n) {
+	int sum = 0;
+	for (int i = 0; i < n; i++) {
+		sum += arr[i];
+	}
+	return sum;
 }
 
-void calculate_min(int p3[], int p4[], int n) {
-	int arr[n], min;
-
-	close(p3[WRITE]);
-	close(p4[READ]);
-
-	read(p3[READ], arr, sizeof(arr));
-
-	min = arr[0];
-
-	for (int i = 1; i < n; i++)
-		if (arr[i] < min) min = arr[i];
-
-	write(p4[WRITE], &min, sizeof(min));
-
-	close(p3[READ]);
-	close(p4[WRITE]);
-	exit(0);
+int find_min(const int* arr, int n) {
+	int min_val = arr[0];
+	for (int i = 1; i < n; i++) {
+		if (arr[i] < min_val) {
+			min_val = arr[i];
+		}
+	}
+	return min_val;
 }
 
 int main(int argc, char* argv[]) {
 	if (argc < 2) {
-		printf("Usage: %s num1 num2 num3 ...\n", argv[0]);
+		printf("Usage: %s <num1> <num2> ... <numN>\n", argv[0]);
 		return 1;
 	}
 
 	int n = argc - 1;
-	int arr[n];
-
-	for (int i = 0; i < n; i++) arr[i] = atoi(argv[i + 1]);
-
-	int p1[2], p2[2], p3[2], p4[2];
-
-	if (pipe(p1) == -1 || pipe(p2) == -1 || pipe(p3) == -1 || pipe(p4) == -1) {
-		perror("pipe");
+	int* arr = malloc(n * sizeof(int));
+	if (!arr) {
+		perror("Memory allocation failed");
 		return 1;
 	}
 
-	pid_t child1 = fork();
+	for (int i = 0; i < n; i++) {
+		arr[i] = atoi(argv[i + 1]);
+	}
 
-	if (child1 == -1) {
-		perror("fork");
+	int pfd_p_to_c1[2], pfd_c1_to_p[2];
+	int pfd_p_to_c2[2], pfd_c2_to_p[2];
+
+	if (pipe(pfd_p_to_c1) == -1 || pipe(pfd_c1_to_p) == -1 || pipe(pfd_p_to_c2) == -1 || pipe(pfd_c2_to_p) == -1) {
+		perror("Pipe creation failed");
+		free(arr);
 		return 1;
 	}
 
-	if (child1 == 0) {
-		close(p3[READ]);
-		close(p3[WRITE]);
-		close(p4[READ]);
-		close(p4[WRITE]);
-
-		calculate_sum(p1, p2, n);
-	}
-
-	pid_t child2 = fork();
-
-	if (child2 == -1) {
-		perror("fork");
+	// ==================== Fork Child 1 ====================
+	pid_t pid_1 = fork();
+	if (pid_1 < 0) {
+		perror("Fork 1 failed");
+		free(arr);
 		return 1;
 	}
 
-	if (child2 == 0) {
-		close(p1[READ]);
-		close(p1[WRITE]);
-		close(p2[READ]);
-		close(p2[WRITE]);
-
-		calculate_min(p3, p4, n);
+	// ==================== Fork Child 2 ====================
+	pid_t pid_2 = -1;
+	if (pid_1 > 0) {
+		pid_2 = fork();
+		if (pid_2 < 0) {
+			perror("Fork 2 failed");
+			free(arr);
+			return 1;
+		}
 	}
 
-	close(p1[READ]);
-	close(p2[WRITE]);
-	close(p3[READ]);
-	close(p4[WRITE]);
+	// ==================== PARENT PROCESS ====================
+	if (pid_1 > 0 && pid_2 > 0) {
+		// Close read ends for parent-to-child pipes
+		close(pfd_p_to_c1[READ]);
+		close(pfd_p_to_c2[READ]);
 
-	write(p1[WRITE], arr, sizeof(arr));
-	write(p3[WRITE], arr, sizeof(arr));
+		// Close write ends for child-to-parent pipes
+		close(pfd_c1_to_p[WRITE]);
+		close(pfd_c2_to_p[WRITE]);
 
-	close(p1[WRITE]);
-	close(p3[WRITE]);
+		// Send full array to both child processes
+		write(pfd_p_to_c1[WRITE], arr, n * sizeof(int));
+		close(pfd_p_to_c1[WRITE]);
 
-	int sum, min;
+		write(pfd_p_to_c2[WRITE], arr + 0, n * sizeof(int));
+		close(pfd_p_to_c2[WRITE]);
 
-	read(p2[READ], &sum, sizeof(sum));
-	read(p4[READ], &min, sizeof(min));
+		// Read sum from Child 1 and min from Child 2
+		int sum = 0, min_val = 0;
+		read(pfd_c1_to_p[READ], &sum, sizeof(int));
+		close(pfd_c1_to_p[READ]);
 
-	close(p2[READ]);
-	close(p4[READ]);
+		read(pfd_c2_to_p[READ], &min_val, sizeof(int));
+		close(pfd_c2_to_p[READ]);
 
-	waitpid(child1, NULL, 0);
-	waitpid(child2, NULL, 0);
+		// Reap children
+		wait(NULL);
+		wait(NULL);
 
-	printf("Sum = %d\n", sum);
-	printf("Minimum = %d\n", min);
+		// Output results
+		printf("Sum of array elements (from Child 1): %d\n", sum);
+		printf("Minimum array element (from Child 2): %d\n", min_val);
 
+		free(arr);
+		return 0;
+	}
+
+	// ==================== CHILD 01 (Calculates Sum) ====================
+	if (pid_1 == 0) {
+		// Close Child 2 pipes completely
+		close(pfd_p_to_c2[READ]);
+		close(pfd_p_to_c2[WRITE]);
+		close(pfd_c2_to_p[READ]);
+		close(pfd_c2_to_p[WRITE]);
+
+		// Close unused ends for Child 1
+		close(pfd_p_to_c1[WRITE]);
+		close(pfd_c1_to_p[READ]);
+
+		// Receive array from parent
+		read(pfd_p_to_c1[READ], arr, n * sizeof(int));
+		close(pfd_p_to_c1[READ]);
+
+		// Calculate sum
+		int sum = find_sum(arr, n);
+
+		// Send sum back to parent
+		write(pfd_c1_to_p[WRITE], &sum, sizeof(int));
+		close(pfd_c1_to_p[WRITE]);
+
+		free(arr);
+		exit(0);
+	}
+
+	// ==================== CHILD 02 (Calculates Min) ====================
+	if (pid_2 == 0) {
+		// Close Child 1 pipes completely
+		close(pfd_p_to_c1[READ]);
+		close(pfd_p_to_c1[WRITE]);
+		close(pfd_c1_to_p[READ]);
+		close(pfd_c1_to_p[WRITE]);
+
+		// Close unused ends for Child 2
+		close(pfd_p_to_c2[WRITE]);
+		close(pfd_c2_to_p[READ]);
+
+		// Receive array from parent
+		read(pfd_p_to_c2[READ], arr, n * sizeof(int));
+		close(pfd_p_to_c2[READ]);
+
+		// Calculate minimum
+		int min_val = find_min(arr, n);
+
+		// Send min back to parent
+		write(pfd_c2_to_p[WRITE], &min_val, sizeof(int));
+		close(pfd_c2_to_p[WRITE]);
+
+		free(arr);
+		exit(0);
+	}
 	return 0;
 }
