@@ -2,10 +2,10 @@
 
 ## info
 - lab-03
+- lab-06
 
 ## os
 - lab-02.08
-- lab-04, 05 prac
 
 # prog
 - week-04
