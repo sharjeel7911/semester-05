@@ -34,7 +34,7 @@ int find_min(const int* arr, int n) {
 	return min_val;
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char** argv) {
 	if (argc < 2) {
 		printf("Usage: %s <num1> <num2> ... <numN>\n", argv[0]);
 		return 1;
@@ -93,7 +93,7 @@ int main(int argc, char* argv[]) {
 		write(pfd_p_to_c1[WRITE], arr, n * sizeof(int));
 		close(pfd_p_to_c1[WRITE]);
 
-		write(pfd_p_to_c2[WRITE], arr + 0, n * sizeof(int));
+		write(pfd_p_to_c2[WRITE], arr, n * sizeof(int));
 		close(pfd_p_to_c2[WRITE]);
 
 		// Read sum from Child 1 and min from Child 2
