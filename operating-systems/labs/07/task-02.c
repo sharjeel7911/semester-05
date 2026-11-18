@@ -1,6 +1,9 @@
+/*
+  $ pwd > location.txt
+*/
+
 #include <fcntl.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <sys/wait.h>
 #include <unistd.h>
 
@@ -9,7 +12,7 @@ int main() {
 
 	if (pid < 0) {
 		perror("fork");
-		exit(EXIT_FAILURE);
+		return 1;
 	}
 
 	if (pid == 0) {
@@ -17,17 +20,18 @@ int main() {
 
 		if (fd < 0) {
 			perror("open");
-			exit(EXIT_FAILURE);
+			return 1;
 		}
 
-		dup2(fd, STDOUT_FILENO);
+		dup2(fd, 1);
 		close(fd);
 
-		execlp("pwd", "pwd", (char*)NULL);
-
+		execlp("pwd", "pwd", NULL);
 		perror("execlp");
-		exit(EXIT_FAILURE);
+		return 1;
 	}
+
 	wait(NULL);
+
 	return 0;
 }

@@ -1,70 +1,74 @@
+/*
+  $ ls | sort > output.txt
+*/
+
 #include <fcntl.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <sys/wait.h>
 #include <unistd.h>
+
+#define r 0
+#define w 1
 
 int main() {
 	int fd[2];
 
 	if (pipe(fd) < 0) {
 		perror("pipe");
-		exit(EXIT_FAILURE);
+		return 1;
 	}
 
 	pid_t pid1 = fork();
 
 	if (pid1 < 0) {
 		perror("fork");
-		exit(EXIT_FAILURE);
+		return 1;
 	}
 
 	if (pid1 == 0) {
-		close(fd[0]);
+		close(fd[r]);
 
-		dup2(fd[1], STDOUT_FILENO);
-		close(fd[1]);
+		dup2(fd[w], 1);
+		close(fd[w]);
 
-		execlp("ls", "ls", (char*)NULL);
-
+		execlp("ls", "ls", NULL);
 		perror("execlp ls");
-		exit(EXIT_FAILURE);
+		return 1;
 	}
 
 	pid_t pid2 = fork();
 
 	if (pid2 < 0) {
 		perror("fork");
-		exit(EXIT_FAILURE);
+		return 1;
 	}
 
 	if (pid2 == 0) {
-		close(fd[1]);
+		close(fd[w]);
 
-		dup2(fd[0], STDIN_FILENO);
-		close(fd[0]);
+		dup2(fd[r], 0);
+		close(fd[r]);
 
 		int out = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
 
 		if (out < 0) {
 			perror("open");
-			exit(EXIT_FAILURE);
+			return 1;
 		}
 
-		dup2(out, STDOUT_FILENO);
+		dup2(out, 1);
 		close(out);
 
-		execlp("sort", "sort", (char*)NULL);
-
+		execlp("sort", "sort", NULL);
 		perror("execlp sort");
-		exit(EXIT_FAILURE);
+		return 1;
 	}
 
-	close(fd[0]);
-	close(fd[1]);
+	close(fd[r]);
+	close(fd[w]);
 
-	waitpid(pid1, NULL, 0);
-	waitpid(pid2, NULL, 0);
+	wait(NULL);
+	wait(NULL);
 
 	return 0;
 }

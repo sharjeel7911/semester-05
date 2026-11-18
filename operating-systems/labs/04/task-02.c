@@ -11,8 +11,8 @@
 #include <sys/wait.h>
 #include <unistd.h>
 
-#define READ 0
-#define WRITE 1
+#define r 0
+#define w 1
 
 int min(int* arr, int n) {
 	int min = arr[0];
@@ -43,10 +43,10 @@ int main() {
 		scanf("%d", &arr[i]);
 	}
 
-	int pfd_p_to_c1[2], pfd_c1_to_p[2];
-	int pfd_p_to_c2[2], pfd_c2_to_p[2];
+	int fd1[2], fd2[2];
+	int fd3[2], fd4[2];
 
-	if (pipe(pfd_p_to_c1) == -1 || pipe(pfd_c1_to_p) == -1 || pipe(pfd_p_to_c2) == -1 || pipe(pfd_c2_to_p) == -1) {
+	if (pipe(fd1) == -1 || pipe(fd2) == -1 || pipe(fd3) == -1 || pipe(fd4) == -1) {
 		perror("Pipe creation failed");
 		free(arr);
 		return 1;
@@ -76,25 +76,25 @@ int main() {
 	// ==================== PARENT PROCESS ====================
 	if (pid_1 > 0 && pid_2 > 0) {
 		// Close unused read/write ends in parent
-		close(pfd_p_to_c1[READ]);
-		close(pfd_c1_to_p[WRITE]);
-		close(pfd_p_to_c2[READ]);
-		close(pfd_c2_to_p[WRITE]);
+		close(fd1[r]);
+		close(fd2[w]);
+		close(fd3[r]);
+		close(fd4[w]);
 
 		// Send slices to children
-		write(pfd_p_to_c1[WRITE], arr, n1 * sizeof(int));
-		close(pfd_p_to_c1[WRITE]);
+		write(fd1[w], arr, n1 * sizeof(int));
+		close(fd1[w]);
 
-		write(pfd_p_to_c2[WRITE], arr + n1, n2 * sizeof(int));
-		close(pfd_p_to_c2[WRITE]);
+		write(fd3[w], arr + n1, n2 * sizeof(int));
+		close(fd3[w]);
 
 		// Read responses from children
 		int min1 = 0, min2 = 0;
-		read(pfd_c1_to_p[READ], &min1, sizeof(int));
-		close(pfd_c1_to_p[READ]);
+		read(fd2[r], &min1, sizeof(int));
+		close(fd2[r]);
 
-		read(pfd_c2_to_p[READ], &min2, sizeof(int));
-		close(pfd_c2_to_p[READ]);
+		read(fd4[r], &min2, sizeof(int));
+		close(fd4[r]);
 
 		// Reap children
 		wait(NULL);
@@ -109,21 +109,21 @@ int main() {
 	// ========== Child process - 01 ==========
 
 	if (pid_1 == 0) {
-		close(pfd_p_to_c1[WRITE]);
-		close(pfd_c1_to_p[READ]);
-		close(pfd_p_to_c2[READ]);
-		close(pfd_p_to_c2[WRITE]);
-		close(pfd_c2_to_p[READ]);
-		close(pfd_c2_to_p[WRITE]);
+		close(fd1[w]);
+		close(fd2[r]);
+		close(fd3[r]);
+		close(fd3[w]);
+		close(fd4[r]);
+		close(fd4[w]);
 
 		int n1 = n / 2;
-		read(pfd_p_to_c1[READ], arr, n1 * sizeof(int));
-		close(pfd_p_to_c1[READ]);
+		read(fd1[r], arr, n1 * sizeof(int));
+		close(fd1[r]);
 
 		int min_val = min(arr, n1);
 
-		write(pfd_c1_to_p[WRITE], &min_val, sizeof(int));
-		close(pfd_c1_to_p[WRITE]);
+		write(fd2[w], &min_val, sizeof(int));
+		close(fd2[w]);
 
 		free(arr);
 		exit(0);
@@ -132,21 +132,21 @@ int main() {
 	// ========== Child process - 02 ==========
 
 	if (pid_2 == 0) {
-		close(pfd_p_to_c2[1]);
-		close(pfd_c2_to_p[0]);
-		close(pfd_p_to_c1[0]);
-		close(pfd_p_to_c1[1]);
-		close(pfd_c1_to_p[0]);
-		close(pfd_c1_to_p[1]);
+		close(fd3[w]);
+		close(fd4[r]);
+		close(fd1[r]);
+		close(fd1[w]);
+		close(fd2[r]);
+		close(fd2[w]);
 
 		int n2 = n - (n / 2);
-		read(pfd_p_to_c2[READ], arr, n2 * sizeof(int));
-		close(pfd_p_to_c2[READ]);
+		read(fd3[r], arr, n2 * sizeof(int));
+		close(fd3[r]);
 
 		int min_val = min(arr, n2);
 
-		write(pfd_c2_to_p[WRITE], &min_val, sizeof(int));
-		close(pfd_c2_to_p[WRITE]);
+		write(fd4[w], &min_val, sizeof(int));
+		close(fd4[w]);
 
 		free(arr);
 		exit(0);

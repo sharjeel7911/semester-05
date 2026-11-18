@@ -1,5 +1,5 @@
 /*
-  Write a C program in which the parent process receives an integer array through
+  w a C program in which the parent process receives an integer array through
   command-line arguments and passes it to its child process using pipe, The child process
   sorts that array (using the sorting algorithm of your choice) and return that array back to
   parent process using a separate pipe. The parent processes finally prints that sorted array
@@ -12,8 +12,8 @@
 #include <sys/wait.h>   // for wait
 #include <unistd.h>     // for fork, pipe, read, write, close
 
-#define READ 0
-#define WRITE 1
+#define r 0
+#define w 1
 
 int cmp_int(const void* a, const void* b) { return *(int*)a - *(int*)b; }
 
@@ -50,16 +50,16 @@ int main(int argc, char** argv) {
 
 	if (pid > 0) {
 		// PARENT PROCESS
-		close(pfd_1[READ]);
-		close(pfd_2[WRITE]);
+		close(pfd_1[r]);
+		close(pfd_2[w]);
 
 		// Send array to child
-		write(pfd_1[WRITE], arr, n * sizeof(int));
-		close(pfd_1[WRITE]);
+		w(pfd_1[w], arr, n * sizeof(int));
+		close(pfd_1[w]);
 
 		// Receive sorted array from child
-		read(pfd_2[READ], arr, n * sizeof(int));
-		close(pfd_2[READ]);
+		r(pfd_2[r], arr, n * sizeof(int));
+		close(pfd_2[r]);
 
 		wait(NULL);
 
@@ -73,20 +73,20 @@ int main(int argc, char** argv) {
 
 	else {
 		// CHILD PROCESS
-		close(pfd_1[WRITE]);
-		close(pfd_2[READ]);
+		close(pfd_1[w]);
+		close(pfd_2[r]);
 
 		// Receive array from parent
-		read(pfd_1[READ], arr, n * sizeof(int));
-		close(pfd_1[READ]);
+		r(pfd_1[r], arr, n * sizeof(int));
+		close(pfd_1[r]);
 
 		// Sort array
 		// qsort(buffer, buffer_size, sizeof(data_type), cmp_func);
 		qsort(arr, n, sizeof(int), cmp_int);
 
 		// Send sorted array to parent
-		write(pfd_2[WRITE], arr, n * sizeof(int));
-		close(pfd_2[WRITE]);
+		w(pfd_2[w], arr, n * sizeof(int));
+		close(pfd_2[w]);
 
 		free(arr);
 		exit(0);

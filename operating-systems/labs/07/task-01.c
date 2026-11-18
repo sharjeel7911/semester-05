@@ -1,6 +1,15 @@
+/*
+  $ ls > files.txt
+*/
+
+/*
+  STDIN_FILENO = 0
+  STDOUT_FILENO = 1
+  STDERR_FILENO = 2
+*/
+
 #include <fcntl.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <sys/wait.h>
 #include <unistd.h>
 
@@ -9,24 +18,23 @@ int main() {
 
 	if (pid < 0) {
 		perror("fork");
-		exit(EXIT_FAILURE);
+		return 1;
 	}
 
 	if (pid == 0) {
-		int fd = open("files.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
+		int fd = open("file.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
 
 		if (fd < 0) {
 			perror("open");
-			exit(EXIT_FAILURE);
+			return 1;
 		}
 
-		dup2(fd, STDOUT_FILENO);
+		dup2(fd, 1);
 		close(fd);
 
-		execlp("ls", "ls", (char*)NULL);
-
+		execlp("ls", "ls", NULL);
 		perror("execlp");
-		exit(EXIT_FAILURE);
+		return 1;
 	}
 
 	wait(NULL);

@@ -1,0 +1,21 @@
+/*
+  $ ls
+*/
+
+#include <stdio.h>
+#include <sys/wait.h>
+#include <unistd.h>
+
+int main() {
+	pid_t pid = fork();
+
+	if (pid == 0) {
+		execlp("ls", "ls", NULL);
+		perror("execlp");
+		return 1;
+	} else {
+		wait(NULL);
+	}
+
+	return 0;
+}
