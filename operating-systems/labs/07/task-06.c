@@ -91,8 +91,6 @@ int main() {
 
 		close(fd2[w]);
 
-		close(fd3[r]);
-
 		dup2(fd2[r], 0);
 		dup2(fd3[w], 1);
 
