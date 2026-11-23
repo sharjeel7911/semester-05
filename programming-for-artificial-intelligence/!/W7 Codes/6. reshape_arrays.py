@@ -23,3 +23,9 @@ auto_grid = raw_data.reshape(2, -1)
 
 # Flatten: Back to 1D
 flat = grid.ravel()
+
+print(raw_data)
+print(grid)
+print(cube)
+print(auto_grid)
+print(flat)
