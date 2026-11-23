@@ -8,4 +8,9 @@ This is a temporary script file.
 a = [1, 2, 3]
 b = a
 b.append(5)
-print(a) # Output: [1, 2, 3] !!c
+print(a)  # Output: [1, 2, 3, 5]
+
+c = [1, 2, 3]
+d = c.copy()
+d.append(5)
+print(c)  # Output: [1, 2, 3]

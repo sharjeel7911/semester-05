@@ -5,7 +5,8 @@ Created on Wed Mar 18 01:38:07 2026
 
 @author: awais
 """
-'''
+
+"""
 Write a function log_experiment(exp_name, *metrics, **metadata) that:
     - Prints the experiment name.
     - Calculates the average of all positional metrics.
@@ -13,4 +14,21 @@ Write a function log_experiment(exp_name, *metrics, **metadata) that:
 
 Example Call:
 log_experiment("ECG_Analysis", 0.95, 0.92, 0.98, date="2026-03-17", researcher="Salman")
-'''
+"""
+
+
+def log_experiment(exp_name, *metrics, **metadata):
+    print(f"Experiment: {exp_name}")
+
+    if metrics:
+        average = sum(metrics) / len(metrics)
+        print(f"Average metrics: {average}")
+    else:
+        print("No metrics provided")
+    print("Metadata:")
+
+    for key, value in metadata.items():
+        print(f"{key}: {value}")
+
+
+log_experiment("ECG_Analysis", 0.95, 0.92, 0.98, date="2026-03-17", researcher="Salman")
